@@ -1,63 +1,67 @@
-# [Your Project Name Here]
-> A short one-line tagline for your quiz or questionnaire
+# Press Start: Find Your Gamer Type
+> "Answer a few questions and discover what kind of gamer you really are."
 
 ## Overview
-> **DELETE AND REPLACE ME:** Describe your program's focus, the type of
-> program it is (quiz, personality test, or recommendation tool), and the
-> final output a user will receive. Make it clear how user input and
-> conditional logic work together to produce that result.
->
-> Example: "This program quizzes users on Impressionist art. Based on
-> their answers, users earn points, and their final score determines
-> their level of knowledge on the topic."
+> This program is a personality quiz that determins what type of gamer the user is based on their gaming >preferences and habits. The user will answer five multiple-choice questions about how they like to play video >games. Their answers will be used with conditional statements to determine their gamer type. At the end of the >quiz, the user will receive one of four results: Competitive Gamer, Explorer Gamer, Social Gamer, or Casual Gamer.
 
 ## Sample Questions and Responses
-> **DELETE AND REPLACE ME:** List at least five questions you'll ask the
-> user, along with the possible responses for each. Keep every question
-> closed-ended (numbered options or yes/no) so each response can be
-> handled directly by an `if`, `elif`, or `else` statement.
->
-> Example:
-> Which of the following painters is an Impressionist?
-> 1. Monet
-> 2. Warhol
-> 3. Rembrandt
+> 1. Do you enjoy competitive games?
+> Yes
+> No
+> 2. Do you prefer playing video games with friends?
+> Yes
+> No
+> 3. Do you enjoy exploring large game worlds?
+> Yes
+> No
+> 4. Do you care more about winning than the story?
+> Yes
+> No
+> 5. Do you play video games almost every day?
+> Yes
+> No
+
 
 ## Variables
-> **DELETE AND REPLACE ME:** List the variables your program uses. For
-> each one, note what it stores and why you structured it that way,
-> especially for variables tracking results, explain whether a single
-> variable or multiple variables makes sense for your program's logic.
->
-> Example:
-> - `score` (int): tracks total quiz points. A single variable works here
->   since results are cumulative and only one final score matters.
-> - `decade_1920s_points`, `decade_1960s_points`, `decade_1980s_points`
->   (int): separate variables needed since multiple decades can tie for
->   highest score, one combined variable couldn't represent that.
-> - `user_choice` (str or int): stores the user's response to a question,
->   compared against expected options to decide which branch of the
->   conditional runs.
+> name (str): stores the user's name so the program can personally address the user.
+> competitive (str): stores whether the user enjoys competitive games. It will contain either "yes" or "no".
+> friends (str): stores whether the user prefers playing video games with friends. It will contain either "yes" or > "no".
+> exploring (str): stores whether the user enjoys exploring large game worlds. It will contain either "yes" or "no".
+> winning (str): stores whether the user cares more about winning than the story. It will contain either "yes" or "no".
+> daily (str): stores whether the user plays video games almost every day. It will contain either "yes" or "no".
+> gamer_type (str): stores the user's final gamer type after their answers have been evaluated. A single variable > works because the program will give the user one final result.
+
+
 
 ## Conditional Logic Outline
-> **DELETE AND REPLACE ME:** Outline every conditional statement in your
-> program, in the order they appear. For each one, describe it in plain
-> language (no code needed): which question/condition it relates to,
-> each branch (`if`/`elif`/`else`), the exact condition that triggers
-> each branch, the action(s) that happen in each branch, and note any
-> nested conditionals and why they're nested.
->
-> Example:
-> - **Conditional statement 1** — related to "Which of the following
->   painters is an Impressionist? 1-Monet 2-Warhol 3-Rembrandt"
->   - `if` response is 1 (Monet): display congratulatory message,
->     increment `score` by 1
->   - `else`: display incorrect message and explain the correct answer
->
-> - **Conditional statement 2** — reveals final results based on `score`
->   - `if` score is 3: display high-knowledge message
->   - `elif` score is 1 or 2: display some-knowledge message
->   - `else`: display message encouraging the user to learn more
+> Conditional statement 1 - related to "Do you enjoy competitive games?"
+> if the response is "yes": show that the user enjoys competitive games.
+> else: show that the user does not enjoy competitive games.
+
+> Conditional statement 2 — related to "Do you prefer playing video games with friends?"
+> if the response is "yes": show that the user prefers playing with friends.
+> else: show that the user prefers playing alone.
+
+> Conditional statement 3 — related to "Do you enjoy exploring large game worlds?"
+> if the response is "yes": show that the user enjoys exploring game worlds.
+> else: show that the user does not prefer exploring game worlds.
+
+> Conditional statement 4 — related to "Do you care more about winning than the story?"
+> if the response is "yes": show that winning is more important to the user than the story.
+> else: show that the story is more important to the user than winning.
+
+> Conditional statement 5 — related to "Do you play video games almost every day?"
+> if the response is "yes": show that the user plays games frequently.
+> else: show that the user does not play games every day.
+
+> Conditional statement 6 — reveals the user's final gamer type based on their answers.
+> if competitive is "yes" and winning is "yes": set gamer_type to "Competitive Gamer."
+> elif exploring is "yes": set gamer_type to "Explorer Gamer."
+> elif friends is "yes": set gamer_type to "Social Gamer."
+> else: set gamer_type to "Casual Gamer."
+
+> Display the user's final gamer type.
+
 
 ## How to Run
 1. Clone this repo
@@ -65,3 +69,5 @@
 
 ## Demo Video
 [DELETE AND REPLACE ME: link to your 5-minute explanation video]
+
+
