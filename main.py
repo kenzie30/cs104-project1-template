@@ -4,9 +4,6 @@
 
 # TODO: Define your variables here.
 
-from operator import add
-
-
 name = ""
 competitive = ""
 friends = ""
